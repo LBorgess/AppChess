@@ -7,6 +7,24 @@
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
-    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:contentDescription="Imagem tabuleiro"
+        android:scaleType="center"
+        android:src="@drawable/table" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xadrez"
+        android:shadowColor="#00BCD4"
+        android:shadowRadius="5"
+        android:layout_gravity="center"
+        android:textColor="#673AB7"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
 
 </LinearLayout>
