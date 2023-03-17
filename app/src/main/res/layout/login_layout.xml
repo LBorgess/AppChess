@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#66689DDF"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <TextView
@@ -24,8 +25,8 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:contentDescription="Imagem tabuleiro"
-        android:scaleType="centerCrop"
         android:padding="25sp"
+        android:scaleType="centerCrop"
         android:src="@drawable/king" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -40,7 +41,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,11 +57,41 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:text="Esqueceu sua senha?" />
 
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEntrar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/btnSair"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sair" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
